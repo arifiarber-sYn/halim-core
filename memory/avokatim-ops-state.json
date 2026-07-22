@@ -1,0 +1,20 @@
+{
+  "last_triage": {
+    "checked_at": "2026-07-22T09:58:25+00:00",
+    "human_count": 0,
+    "human_real_count": 0,
+    "human": [],
+    "bounce_count": 0,
+    "system_count": 0,
+    "error": null
+  },
+  "last_error": null,
+  "conversations": {
+    "emrush_kastrati": {
+      "last_interaction": "2026-07-21T09:50:00+00:00",
+      "status": "replied",
+      "message_id": "<CAHv_OdaBqDCwK97GprkmeD5p1j0m5PTYMnziYhoG7J4J9qN1Ew@mail.gmail.com>",
+      "reply_sent_at": "2026-07-21T09:50:00+00:00"
+    }
+  }
+}

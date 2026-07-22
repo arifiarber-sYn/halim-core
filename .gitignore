@@ -1,0 +1,5 @@
+# Skip OpenClaw runtime/cache - git is for MEMORY only
+media/
+*.log
+*.pid
+/tmp/
