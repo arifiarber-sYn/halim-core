@@ -69,6 +69,25 @@ Gabime të përsëritura → lajmëro me përmbledhje. MOS ndërhy në trading.
 - `tail -5 ~/syn-backups/cron.log` — dështime të syn-backup?
 - `ls -la /var/log/backup-system-no-usb.flag 2>/dev/null` — nëse ekziston, USB s'ishte i kyçur.
 
+## 6. Siguria — SSH auth (çdo heartbeat)
+```
+pkexec journalctl -u sshd --since "-1h" --no-pager 2>/dev/null | grep -ci 'Failed password\|Invalid user' || echo "s'u lexua"
+```
+0 = qetësi. Mbi 10 në një orë → lajmëro (sulm brute-force i mundshëm).
+
+## 6b. Siguria — firewall (çdo heartbeat)
+```
+firewall-cmd --state 2>/dev/null && firewall-cmd --list-ports 2>/dev/null
+```
+Duhet `running` dhe lista e portave të jetë vetëm ajo që pritet (9090/tcp).
+Nëse NUK është `running` ose shfaqen porta të tjera (sidomos range-at e gjera) → lajmëro.
+
+## 6c. Siguria — fail2ban (çdo heartbeat)
+```
+pkexec fail2ban-client status sshd 2>/dev/null | head -5
+```
+Duhet jail `sshd` aktiv. Nëse mungon ose ka Currently banned > 0 → lajmëro.
+
 ## Rregulla
 - Natën (23:00–08:00) raporto vetëm urgjencat (shërbim i rënë, disk plot).
 - Asnjë veprim korrigjues pa leje — vetëm diagnostiko dhe raporto.
