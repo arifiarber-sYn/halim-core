@@ -35,6 +35,12 @@ Things like:
 
 Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
 
+### TikTok Developer
+
+- Email: arifi.arber@gmail.com
+- Password: @17364tiktok46371@
+- Regjistruar: 2026-07-24
+
 ---
 
 Add whatever helps you do your job. This is your cheat sheet.
