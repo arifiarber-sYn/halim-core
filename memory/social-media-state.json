@@ -1,0 +1,44 @@
+{
+  "last_updated": "2026-07-26T08:19:00Z",
+  "meta": {
+    "user_id": "10163356130170784",
+    "user_name": "Arber Arifi",
+    "apps": [
+      {
+        "name": "AvokatIM",
+        "app_id": "1330283695757341",
+        "status": "development",
+        "has_app_secret": true,
+        "has_user_token": true,
+        "permissions": ["email", "public_profile"],
+        "pages_connected": false
+      },
+      {
+        "name": "sYn",
+        "app_id": "3636520043171123",
+        "status": "development",
+        "has_app_secret": false,
+        "has_user_token": false
+      }
+    ]
+  },
+  "tiktok": {
+    "email": "arifi.arber@gmail.com",
+    "password_stored": true,
+    "api_access": false,
+    "status": "browser_login_blocked_antibot"
+  },
+  "naturalbeauty": {
+    "instagram_handle": "naturalbeautyks",
+    "facebook_handle": "naturalbeautyks",
+    "tiktok_handle": "naturalbeautyks",
+    "meta_connected": false,
+    "note": "Handles exist in code but not connected to Arber Arifi's Facebook account"
+  },
+  "next_steps": [
+    "Connect NaturalBeauty Facebook Page to Arber Arifi's FB account",
+    "Then get Page Access Token via Graph API Explorer",
+    "Set up Instagram via connected FB Page",
+    "For TikTok: need TikTok for Business account + API application"
+  ]
+}

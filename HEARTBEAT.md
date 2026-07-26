@@ -6,7 +6,7 @@ që të mos përsëritesh.
 
 ## 1. Shërbimet kritike (çdo heartbeat)
 ```
-systemctl --user is-active toto-trading.service opshub.service avokatim.service avokatim-tunnel.service openclaw-gateway.service
+systemctl --user is-active toto-trading.service opshub.service avokatim.service avokatim-tunnel.service openclaw-gateway.service naturalbeauty-web.service naturalbeauty-voice.service naturalbeauty-webtunnel.service
 ```
 Nëse ndonjë NUK është `active` → lajmëro MENJËHERË. MOS i rinis vetë — vetëm raporto.
 
@@ -24,6 +24,13 @@ Duhet `{"status":"ok","app":"AvokatIM"}`. Çdo gjë tjetër (timeout, error, bos
 → lajmëro MENJËHERË — platforma është LIVE me përdorues realë.
 (Detyrat e tjera të AvokatIM — inbox triage 10-minutësh dhe raporti i mëngjesit —
 janë cron jobs më vete; roli dhe rregullat te AVOKATIM-OPS.md.)
+
+## 1d. NaturalBeauty API (çdo heartbeat)
+```
+curl -s -m 5 http://localhost:3005/sq && curl -s -m 5 http://localhost:8791/health
+```
+Web duhet të kthejë HTML (200), voice duhet `{"ok":true,"stt":true,"tts":true}`.
+Nëse ndonjëri dështon → lajmëro.
 
 ## 2. Kontejnerët docker (çdo heartbeat)
 ```

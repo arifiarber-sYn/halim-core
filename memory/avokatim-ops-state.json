@@ -11,19 +11,27 @@
   "last_triage_check": "2026-07-26T02:18:25+00:00",
   "last_error": null,
   "consecutive_error_count": 0,
-  "pending_approval": {
-    "uid": 16369,
-    "from": "gazmend halilaj <gazmend.halilaj81@gmail.com>",
-    "subject": "Re: AvokatIM — platforma kosovare që ju sjell klientë dhe ju kursen kohë",
-    "draft_sent_at": "2026-07-24T07:38:00+00:00",
-    "status": "awaiting_approval"
-  },
   "conversations": {
     "emrush_kastrati": {
       "last_interaction": "2026-07-21T09:50:00+00:00",
       "status": "replied",
       "message_id": "<CAHv_OdaBqDCwK97GprkmeD5p1j0m5PTYMnziYhoG7J4J9qN1Ew@mail.gmail.com>",
       "reply_sent_at": "2026-07-21T09:50:00+00:00"
+    },
+    "ibrahim_dobruna": {
+      "last_interaction": "2026-07-26T07:40:00+00:00",
+      "status": "replied",
+      "old_email": "idobruna@lawyer.com",
+      "new_email": "ibrahim.dobruna@gmail.com",
+      "reply_sent_at": "2026-07-26T07:40:00+00:00",
+      "note": "Auto-reply that old email is no longer in use. Replied to new address. Outreach CSV needs manual update when campaign resumes."
     }
+  },
+  "pending_approval": {
+    "uid": 16369,
+    "from": "gazmend halilaj <gazmend.halilaj81@gmail.com>",
+    "subject": "Re: AvokatIM — platforma kosovare që ju sjell klientë dhe ju kursen kohë",
+    "draft_sent_at": "2026-07-24T07:38:00+00:00",
+    "status": "awaiting_approval"
   }
 }
