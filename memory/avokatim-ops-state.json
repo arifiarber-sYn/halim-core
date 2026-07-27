@@ -1,6 +1,6 @@
 {
   "last_triage": {
-    "checked_at": "2026-07-26T02:18:25+00:00",
+    "checked_at": "2026-07-27T09:38:26+00:00",
     "human_count": 0,
     "human_real_count": 0,
     "human": [],
@@ -8,7 +8,7 @@
     "system_count": 0,
     "error": null
   },
-  "last_triage_check": "2026-07-26T02:18:25+00:00",
+  "last_triage_check": "2026-07-27T09:38:26+00:00",
   "last_error": null,
   "consecutive_error_count": 0,
   "conversations": {
