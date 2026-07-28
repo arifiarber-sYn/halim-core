@@ -1,17 +1,8 @@
 {
-  "last_check": "2026-07-27T22:10:08+00:00",
-  "human_pending": [
-    {
-      "uid": 16397,
-      "from": "Max Sutton <max.sutton@yondatax.com>",
-      "subject": "Yonda Tax Consultation",
-      "date": "2026-07-27T22:06:01+00:00",
-      "classification": "outreach_inquiry (Arber's own request)",
-      "action_taken": "deferred_to_morning",
-      "note": "Night hours guardrail — follow up at dawn. This is about a consultation Arber requested, not a customer inquiry."
-    }
-  ],
+  "last_triage": "2026-07-28T04:09:41+00:00",
+  "status": "ok",
+  "human_count": 0,
   "bounce_count": 0,
   "system_count": 0,
-  "errors": []
+  "action_taken": "none"
 }
