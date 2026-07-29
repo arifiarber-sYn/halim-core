@@ -78,7 +78,7 @@ Gabime të përsëritura → lajmëro me përmbledhje. MOS ndërhy në trading.
 
 ## 6. Siguria — SSH auth (çdo heartbeat)
 ```
-pkexec journalctl -u sshd --since "-1h" --no-pager 2>/dev/null | grep -ci 'Failed password\|Invalid user' || echo "s'u lexua"
+journalctl -u sshd --since "-1h" --no-pager 2>/dev/null | grep -ci 'Failed password\|Invalid user' || echo "s'u lexua"
 ```
 0 = qetësi. Mbi 10 në një orë → lajmëro (sulm brute-force i mundshëm).
 
@@ -91,7 +91,7 @@ Nëse NUK është `running` ose shfaqen porta të tjera (sidomos range-at e gjer
 
 ## 6c. Siguria — fail2ban (çdo heartbeat)
 ```
-pkexec fail2ban-client status sshd 2>/dev/null | head -5
+sudo -n fail2ban-client status sshd 2>/dev/null | head -5
 ```
 Duhet jail `sshd` aktiv. Nëse mungon ose ka Currently banned > 0 → lajmëro.
 

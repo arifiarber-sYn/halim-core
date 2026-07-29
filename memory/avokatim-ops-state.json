@@ -1,7 +1,17 @@
 {
-  "last_check": "2026-07-29T03:28:22+00:00",
-  "human_count": 0,
+  "last_triage": "2026-07-29T07:48:50+00:00",
+  "result": "replied",
+  "human_count": 1,
+  "system_count": 0,
   "bounce_count": 0,
-  "status": "ok",
-  "actions_taken": []
+  "action": "replied_outreach_positive",
+  "replied_to": [
+    {
+      "uid": 16408,
+      "from": "Mark Abazi <mark.abazi1956@gmail.com>",
+      "subject": "Re: AvokatIM — platforma kosovare që ju sjell klientë dhe ju kursen kohë",
+      "response_type": "outreach_positive",
+      "replied_at": "2026-07-29T07:49:00+00:00"
+    }
+  ]
 }
