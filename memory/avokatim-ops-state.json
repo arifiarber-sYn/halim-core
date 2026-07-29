@@ -1,8 +1,7 @@
 {
-  "last_triage": "2026-07-28T17:28:23+00:00",
-  "human_emails": [],
+  "last_check": "2026-07-29T03:28:22+00:00",
+  "human_count": 0,
   "bounce_count": 0,
-  "error": null,
-  "action_taken": "none — heshtje totale",
-  "notified_kllosha": false
+  "status": "ok",
+  "actions_taken": []
 }
