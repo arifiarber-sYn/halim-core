@@ -1,8 +1,7 @@
 {
-  "last_check": "2026-07-30T02:21:00+00:00",
-  "result": "empty",
-  "human_emails": [],
+  "last_triage": "2026-07-30T09:28:23+00:00",
+  "status": "clean",
+  "human_count": 0,
   "bounce_count": 0,
-  "action_taken": "none",
-  "note": "Nate e qete. Asnje email njerezor, pa bounce."
+  "action_taken": "none"
 }
