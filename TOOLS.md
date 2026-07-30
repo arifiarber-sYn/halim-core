@@ -41,6 +41,12 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 - Password: @17364tiktok46371@
 - Regjistruar: 2026-07-24
 
+### Kredenciale të përgjithshme (shtuar 2026-07-30)
+
+- Përdoruesi: Kllosha (K e madhe)
+- Fjalëkalimi: Eda2026!
+- Shënim: Shtuar nga Kllosha më 30 korrik 2026. Ende pa kontekst specifik.
+
 ---
 
 Add whatever helps you do your job. This is your cheat sheet.

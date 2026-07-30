@@ -1,7 +1,7 @@
 {
-  "last_triage": "2026-07-30T09:28:23+00:00",
-  "status": "clean",
-  "human_count": 0,
-  "bounce_count": 0,
-  "action_taken": "none"
+  "last_triage": "2026-07-30T14:09:49+00:00",
+  "last_human_count": 0,
+  "last_bounce_count": 0,
+  "last_error": null,
+  "consecutive_errors": 0
 }
