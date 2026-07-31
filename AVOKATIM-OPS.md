@@ -44,11 +44,16 @@ Për ÇDO email njerëzor nga triage:
 
 ## Verifikimi i licencave (AUTONOM)
 
-Kur regjistrohet avokat i ri dhe licenca del "pending":
+PREJ 2026-07-31 verifikimi është PLOTËSISHT automatik kur emaili i konfirmuar
+përputhet me regjistrin OAK/ONK — sistemi verifikon vetë në momentin e
+konfirmimit të email-it, PA numër license dhe PA veprim tëndin (merr njoftim
+`auto-verifikim`, s'kërkohet gjë). Ti ndërhyn VETËM kur emaili NUK përputhet:
 
 1. Kontrollo regjistrin lokal OAK: `grep "emri" ~/AvokatIM/data/oak_registry.csv`
-2. Nëse emaili përputhet → shëno `email_verified_at` dhe thirr
-   `try_auto_verify(user_id)` përmes Python script (shih template).
+2. KURRË mos e vendos vetë `email_verified_at` — prova e identitetit është
+   pikërisht kontrolli i inbox-it nga vetë avokati. Nëse emaili i regjistrit
+   ndryshon nga ai i regjistrimit por është qartë i njëjti person (p.sh.
+   gabim shtypi si rasti Leutrim Himaj), propozoja Kllosha-s korrigjimin.
 3. Nëse emaili NUK përputhet, por avokati është real (verifikuar përmes
    web search / burimeve publike):
    - Shëno `verification_status = "verified"` manualisht
@@ -103,6 +108,13 @@ MOS propozo email falënderimi — sistemi i dërgon vetë.
 
 Backend-i dërgon hook events. Përcillja Kllosha-s në Telegram shqip, shkurt.
 **KUJDES:** hook-runs janë të izoluara — përdor `message` tool për Telegram.
+
+- `lloji=siguri`: raporti javor i skanimit të varësive
+  (`~/AvokatIM/scripts/security_scan.sh`, e hëna 07:30, log i plotë te
+  `~/AvokatIM/data/security-scan.log`). Nëse s'ka gjetje, mjafton një rresht
+  te raporti i mëngjesit. Nëse KA gjetje: përcille menjëherë me listën e
+  paketave; NËSE upgrade-i është patch i vogël (p.sh. pip/setuptools) mund
+  ta propozosh, por MOS instalo asgjë vetë (guardrail 5 vlen edhe këtu).
 
 ## Rregulla të forta (GUARDRAILS)
 
