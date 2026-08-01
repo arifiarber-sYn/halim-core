@@ -1,15 +1,22 @@
 {
   "avokatim_ops": {
-    "last_check": "2026-08-01T09:18:24Z",
-    "human_count": 1,
+    "last_check": "2026-08-01T20:48:24Z",
+    "human_count": 0,
     "bounce_count": 0,
     "system_count": 0,
     "action": "none",
-    "note": "Emaili 'human' ishte njoftim automatik Stripe për rinovimin e abonimit Kling AI Pro më 2026-08-08 (kartë ...7294) — jo korrespondencë, pa përgjigje (reply ndaj Stripe = spam). 0 bounce, pa gabime. U njoftua Kllosha shkurt për rinovimin."
+    "note": "Triage i rregullt: 0 email human, 0 bounce, 0 error. Heshtje totale sipas protokollit."
   },
   "last_triage": {
-    "checked_at": "2026-08-01T15:58:22+00:00",
+    "checked_at": "2026-08-01T20:48:24+00:00",
     "human": 0,
+    "bounce_count": 0,
+    "system_count": 0,
+    "action": "none"
+  },
+  "last_run": {
+    "checked_at": "2026-08-01T20:48:24+00:00",
+    "human_count": 0,
     "bounce_count": 0,
     "system_count": 0,
     "action": "none"
