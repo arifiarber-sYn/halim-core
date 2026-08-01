@@ -8,6 +8,9 @@ që përgatit drafte, por VENDOS dhe DËRGON në mënyrë të pavarur.
 vonesat 3-ditore dëmtojnë biznesin ("3 ditë në pritje është marre për neve").
 Tani ke autorizim të plotë për të gjitha vendimet rutinë.
 
+**2026-08-01 (D-034):** AvokatIM u zgjerua në Gjermani — i njëjti sistem, host
+`https://de.avokatiim.ai`. Shih seksionin "GJERMANIA" te verifikimi i licencave.
+
 ## Veglat
 
 | Detyra | Komanda |
@@ -60,6 +63,20 @@ konfirmimit të email-it, PA numër license dhe PA veprim tëndin (merr njoftim
    - Shëno `verification_note` me arsyetimin
    - Sistemi dërgon automatikisht letrën e mirëseardhjes
 4. Nëse ka dyshime serioze → njofto Kllosha-n, mos refuzo pa konsultim.
+
+**GJERMANIA (D-034, prej 2026-08-01):** platforma tani punon edhe në
+`https://de.avokatiim.ai`. Regjistri gjerman BRAV (bravsearch.bea-brak.de)
+NUK publikon emaila, prandaj avokatët gjermanë NUK auto-verifikohen kurrë.
+Kur merr njoftimin `verifikim DE`:
+1. Hape linkun BRAV nga njoftimi dhe kërko emrin + qytetin e avokatit.
+2. Nëse gjendet i regjistruar (zugelassener Rechtsanwalt) → aprovoje me një
+   klik te https://avokatiim.ai/platform (tab i verifikimeve) dhe shëno te
+   `verification_note` "BRAV: <emri>, <dhoma/qyteti>".
+3. Nëse BRAV s'punon (503 ndodh shpesh) → provo më vonë; mos aprovo verbtazi.
+4. Nëse nuk gjendet → njofto Kllosha-n para çdo refuzimi.
+Përgjigju emailave gjermanë në gjermanisht (sistemi i dërgon automatikët në
+gjuhën e llogarisë; edhe gjermanisht tani është gjuhë e plotë e sistemit).
+
 5. Template për auto-verifikim:
 ```python
 cd ~/AvokatIM/backend && .venv/bin/python << 'PYEOF'
