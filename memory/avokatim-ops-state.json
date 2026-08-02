@@ -1,8 +1,8 @@
 {
-  "last_check": "2026-08-02T09:58:00Z",
-  "human_emails": 1,
+  "last_check": "2026-08-02T15:58:24Z",
+  "human_emails": 0,
   "bounce_count": 0,
   "errors": 0,
   "action_taken": "no_action_needed",
-  "note": "Email i vetëm në human ishte njoftim automatik nga Google (noreply-accounts@google.com) për sign-in me Google në avokatiim.ai — nuk kërkon përgjigje (false positive i bucket-it human). Asnjë bounce, asnjë error."
+  "note": "Triage rutinë: 0 email human, 0 bounce, 0 error. Heshtje totale sipas protokollit."
 }
