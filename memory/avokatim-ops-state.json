@@ -1,6 +1,6 @@
 {
   "avokatim_ops": {
-    "last_check": "2026-08-01T20:48:24Z",
+    "last_check": "2026-08-02T00:58:25Z",
     "human_count": 0,
     "bounce_count": 0,
     "system_count": 0,
@@ -8,14 +8,14 @@
     "note": "Triage i rregullt: 0 email human, 0 bounce, 0 error. Heshtje totale sipas protokollit."
   },
   "last_triage": {
-    "checked_at": "2026-08-01T20:48:24+00:00",
+    "checked_at": "2026-08-02T00:58:25+00:00",
     "human": 0,
     "bounce_count": 0,
     "system_count": 0,
     "action": "none"
   },
   "last_run": {
-    "checked_at": "2026-08-01T20:48:24+00:00",
+    "checked_at": "2026-08-02T00:58:25+00:00",
     "human_count": 0,
     "bounce_count": 0,
     "system_count": 0,
