@@ -1,24 +1,8 @@
 {
-  "avokatim_ops": {
-    "last_check": "2026-08-02T00:58:25Z",
-    "human_count": 0,
-    "bounce_count": 0,
-    "system_count": 0,
-    "action": "none",
-    "note": "Triage i rregullt: 0 email human, 0 bounce, 0 error. Heshtje totale sipas protokollit."
-  },
-  "last_triage": {
-    "checked_at": "2026-08-02T00:58:25+00:00",
-    "human": 0,
-    "bounce_count": 0,
-    "system_count": 0,
-    "action": "none"
-  },
-  "last_run": {
-    "checked_at": "2026-08-02T00:58:25+00:00",
-    "human_count": 0,
-    "bounce_count": 0,
-    "system_count": 0,
-    "action": "none"
-  }
+  "last_check": "2026-08-02T09:58:00Z",
+  "human_emails": 1,
+  "bounce_count": 0,
+  "errors": 0,
+  "action_taken": "no_action_needed",
+  "note": "Email i vetëm në human ishte njoftim automatik nga Google (noreply-accounts@google.com) për sign-in me Google në avokatiim.ai — nuk kërkon përgjigje (false positive i bucket-it human). Asnjë bounce, asnjë error."
 }
