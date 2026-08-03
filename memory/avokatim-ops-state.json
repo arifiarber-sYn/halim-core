@@ -1,11 +1,11 @@
 {
-  "last_check": "2026-08-03T15:48:23Z",
+  "last_check": "2026-08-03T19:48:22Z",
   "human_emails": 1,
   "bounce_count": 0,
   "errors": 0,
   "action_taken": "no_action_needed",
-  "note": "1 'human' email por ishte newsletter automatik nga Blockchain.com (krypto) — false positive, jo pyetje për AvokatIM. Pa përgjigje (s'ka kuptim t'i përgjigjesh newsletter-it). 0 bounce, 0 error. Heshtje.",
-  "last_triage_check": "2026-08-03T15:58:23+00:00",
-  "human_count": 0,
+  "note": "1 'human' email = newsletter/marketing nga Cursor Team (UID 16472) — false positive, jo email AvokatIM. Pa përgjigje (s'është pyetje/ankesë/outreach reply). 0 bounce, 0 error. Heshtje.",
+  "last_triage_check": "2026-08-03T19:48:22+00:00",
+  "human_count": 1,
   "error": null
 }
