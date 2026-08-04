@@ -1,11 +1,17 @@
 {
-  "last_check": "2026-08-04T08:08:54Z",
-  "human_emails": 1,
+  "last_check": "2026-08-04T20:48:22Z",
+  "human_emails": 0,
   "bounce_count": 0,
   "errors": 0,
-  "action_taken": "no_action_needed",
-  "note": "1 'human' email = newsletter/marketing nga Cloudflare 'It's Agents Week' (UID 16474) — false positive, jo email AvokatIM. Pa përgjigje (s'është pyetje/ankesë/outreach reply; marketing bulk). 0 bounce, 0 error. Heshtje.",
-  "last_triage_check": "2026-08-04T08:08:54+00:00",
-  "human_count": 1,
-  "error": null
+  "action_taken": "none",
+  "note": "Triage periodik: inbox bosh, pa bounce, pa error. Heshtje sipas protokollit.",
+  "last_triage_check": "2026-08-04T20:48:22+00:00",
+  "human_count": 0,
+  "error": null,
+  "last_triage": {
+    "checked_at": "2026-08-04T20:48:22+00:00",
+    "human_count": 0,
+    "bounce_count": 0,
+    "action": "none"
+  }
 }
