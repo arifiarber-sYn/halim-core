@@ -1,24 +1,25 @@
 {
-  "last_check": "2026-08-05T10:09:13Z",
+  "last_check": "2026-08-05T21:09:12Z",
   "human_emails": 0,
   "bounce_count": 0,
   "errors": 0,
-  "last_triage_check": "2026-08-05T10:09:13+00:00",
+  "last_triage_check": "2026-08-05T21:09:12+00:00",
   "human_count": 0,
   "error": null,
   "last_triage": {
-    "checked_at": "2026-08-05T10:09:13+00:00",
+    "checked_at": "2026-08-05T21:09:12+00:00",
     "human_count": 0,
     "bounce_count": 0,
-    "action": "none"
+    "action": "silent_empty"
   },
   "last_action": {
-    "at": "2026-08-05T09:17:00Z",
-    "type": "lead-followup",
-    "recipient": "katarinavuksani@hotmail.com",
-    "person": "Av. Katarina Vuksani (Pejë)",
-    "action": "sent_followup",
-    "outcome": "sent",
-    "notified_kllosha": true
+    "at": "2026-08-05T21:09:15Z",
+    "type": "triage",
+    "recipient": null,
+    "person": null,
+    "action": "none",
+    "outcome": "empty_inbox",
+    "notified_kllosha": false,
+    "note": "Triage 23:09: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale sipas D-069."
   }
 }
