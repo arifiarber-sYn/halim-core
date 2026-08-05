@@ -1,17 +1,24 @@
 {
-  "last_check": "2026-08-04T22:58:25Z",
-  "human_emails": 4,
+  "last_check": "2026-08-05T10:09:13Z",
+  "human_emails": 0,
   "bounce_count": 0,
   "errors": 0,
-  "action_taken": "none",
-  "note": "Triage 00:58 (natë): 4 email 'human' — të gjitha janë verifikime automatike Roblox (no-reply@roblox.com, llogaria Arberzzz1), JO korrespondencë biznesi AvokatIM. Nuk kërkojnë përgjigje (dërgues no-reply). Natën veprohet vetëm për SOS/service-down/bounce-spike → heshtje, raportohet në mëngjes nëse përsëritet.",
-  "last_triage_check": "2026-08-04T22:58:25+00:00",
-  "human_count": 4,
+  "last_triage_check": "2026-08-05T10:09:13+00:00",
+  "human_count": 0,
   "error": null,
   "last_triage": {
-    "checked_at": "2026-08-04T22:58:25+00:00",
-    "human_count": 4,
+    "checked_at": "2026-08-05T10:09:13+00:00",
+    "human_count": 0,
     "bounce_count": 0,
     "action": "none"
+  },
+  "last_action": {
+    "at": "2026-08-05T09:17:00Z",
+    "type": "lead-followup",
+    "recipient": "katarinavuksani@hotmail.com",
+    "person": "Av. Katarina Vuksani (Pejë)",
+    "action": "sent_followup",
+    "outcome": "sent",
+    "notified_kllosha": true
   }
 }

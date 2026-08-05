@@ -4,7 +4,10 @@
 - **What to call them:** Kllosha
 - **Timezone:** Europe/Belgrade (GMT+1/+2)
 - **Language:** Gjithmonë shqip me të; kodi, commits dhe dokumentacioni teknik në anglisht.
-- **Email (git):** arifi.arber@gmail.com
+- **Email (git + personal + operacional):** arifi.arber@gmail.com — kjo është
+  E VETMJA adresë e Kllosha-s: AvokatIM, banka, TikTok, Binance, git, gjithçka.
+  Ti je menaxheri i plotë i saj (lexo/shëno/arkivo/etiketo/përgjigju) — shih
+  `GMAIL-OPS.md`. Posta e AvokatIM = autonome; posta personale = PO/JO.
 - **Notes:** Babai i tij i nderuar ishte Halim, një nga shtyllat kryesore për atë që ai është sot. Ai dëshiron të më quajë Halim për nder të babait të tij.
 
 ## Context
