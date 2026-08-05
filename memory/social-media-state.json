@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26T08:19:00Z",
+  "last_updated": "2026-08-05T12:00:00Z",
   "meta": {
     "user_id": "10163356130170784",
     "user_name": "Arber Arifi",
@@ -31,14 +31,19 @@
   "naturalbeauty": {
     "instagram_handle": "naturalbeautyks",
     "facebook_handle": "naturalbeautyks",
-    "tiktok_handle": "naturalbeautyks",
     "meta_connected": false,
-    "note": "Handles exist in code but not connected to Arber Arifi's Facebook account"
+    "publisher_built": true,
+    "publisher_code": "~/NaturalBeauty/src/lib/social.ts (FB feed/photos + IG two-step; cron via processScheduledSocialPosts)",
+    "approval_flow": "/admin/social: APPROVED -> PUBLISHED (owner approves drafts, cron publishes)",
+    "missing_creds": ["PAGE_ACCESS_TOKEN", "FB_PAGE_ID", "IG_USER_ID"],
+    "token_helper": "~/NaturalBeauty/scripts/meta_token_setup.py (short-lived -> long-lived + discovers IDs, --write-env)",
+    "runbook": "~/NaturalBeauty/docs/agent/SOCIAL-SETUP.md",
+    "note": "Everything is code-complete on the machine. Blocked ONLY on one owner action: connect Page + IG, mint a short-lived token in Graph API Explorer, hand it to Halim."
   },
   "next_steps": [
-    "Connect NaturalBeauty Facebook Page to Arber Arifi's FB account",
-    "Then get Page Access Token via Graph API Explorer",
-    "Set up Instagram via connected FB Page",
-    "For TikTok: need TikTok for Business account + API application"
+    "OWNER (one-time, 2FA): connect NaturalBeauty Page + link Instagram Business account, then mint a short-lived User token in Graph API Explorer with pages_manage_posts + instagram_content_publish scopes.",
+    "HALIM: run scripts/meta_token_setup.py --write-env to finish wiring, restart naturalbeauty-web.",
+    "HALIM: first posts of each type stay APPROVED for PO/JO; after approval the cron publishes autonomously.",
+    "For TikTok: still need TikTok for Business + API approval (personal login blocked by antibot)."
   ]
 }

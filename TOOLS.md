@@ -49,4 +49,26 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 ---
 
+## Skills të aktivizuara (D-065, 2026-08-05)
+
+Falas, Linux-safe, të kuruara. CLI-backed skills tregojnë "needs setup" derisa
+CLI-ja instalohet në përdorimin e parë (OpenClaw e instalon automatikisht).
+
+| Skill | Për çfarë | Status |
+|---|---|---|
+| **healthcheck** | Auditim sigurie i makinës (SSH, firewall, update) | ready |
+| **skill-creator** | Ndërto/edito skills të reja për detyra specifike | ready |
+| **weather** | Moti + parashikim (web_fetch) | ready |
+| **session-logs** | Analizo logjet e mia (vetë-përmirësim); do `rg`/`jq` | needs `rg` |
+| **summarize** | Transkripto/përmbledh URL/PDF/YouTube (pa API) | CLI on 1st use |
+| **blogwatcher** | Monitoro RSS/Atom (ndryshime ligjore, konkurrentë) | CLI on 1st use |
+| **nano-pdf** | Redakto PDF me gjuhë natyrale (oferta, dokumente) | CLI on 1st use |
+| **mcporter** | Menaxho servera MCP (mundësues për të ardhmen) | CLI on 1st use |
+
+NUK aktivizohen: skills macOS (apple-*, imsg, sonoscli, peekaboo, things-mac),
+github/gh-issues (asnjë remote), voice-call/wacli/xurl (me pagesë — më vonë),
+model-usage/ordercli (të pavlefshme këtu).
+
+---
+
 Add whatever helps you do your job. This is your cheat sheet.

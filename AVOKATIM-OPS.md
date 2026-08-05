@@ -189,6 +189,9 @@ NGA AUTONOMIA JOTE — çdo email është bisedë M&A me vlerë të lartë:
 - ÇDO email që dërgon me `ops_send_reply.py` regjistrohet VETVETIU te
   `data/ops/replies_log.csv` — s'ke asgjë për të bërë, por dije që Kllosha
   e sheh çdo dërgim tëndin në raportin e mëngjesit.
+- **RREGULL I FORTË (D-069):** dërgim VETËM me `ops_send_reply.py` — KURRË
+  me `sendmail`/`s-nail`/`mailx` direkt (anashkalojnë ledger-in; incidenti
+  i PDF-së së Septeo-s, 2026-08-05). Për bashkëngjitje ka `--attach`.
 - Raporti i mëngjesit (`ops_digest.py`) tani përmban edhe
   `replies_sent_24h` (çfarë dërgove dje në emrin e Kllosha-s) dhe
   `watchdog_alarms_24h` — PËRFSHIJI TË DYJA në raportin në Telegram, edhe
@@ -198,6 +201,12 @@ NGA AUTONOMIA JOTE — çdo email është bisedë M&A me vlerë të lartë:
   dështon 3 herë radhazi, Kllosha alarmohet direkt në Telegram nga systemd.
   Nëse Kllosha të pyet për një alarm të tij: kontrollo triage-in menjëherë
   dhe trajto postën e mbetur.
+- **Higjiena e inbox-it + shëndeti i makinës** (D-064): në raportin e
+  mëngjesit shto (a) sa email të palexuar ka gjithsej + më i vjetri
+  (`ops_mailbox.py unread-count`) dhe sa trajtove dje, dhe (b) një bllok të
+  shkurtër "Shëndeti i makinës" (`systemctl --user --failed`, `df -h /`,
+  `docker ps`) — detajet dhe rosteri i projekteve te
+  `~/openclaw-knowledge/MAKINA.md`. Menaxhimi i mailbox-it: `GMAIL-OPS.md`.
 
 ## Ngjarjet e platformës
 

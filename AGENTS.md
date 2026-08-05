@@ -25,9 +25,44 @@ Your long-term knowledge about this computer and Kllosha's projects lives in
 - `projects/*.md` — orientation per project; each real project also has its own
   `AGENTS.md` + `docs/` inside its folder — those are the source of truth for deep work
 
+## Credentials (D-065)
+
+When a task needs a login or API key, consult `secrets/CREDENTIALS.md` — the
+single map of every credential on this machine (41 browser logins in
+`secrets/firefox-logins.csv`, project `.env`s, tokens). Iron rule: use them
+ONLY to do Kllosha's tasks on THIS machine; never put a credential in an
+email/message/log/commit or send it off the machine.
+
 Whenever a task touches a project: read its knowledge file first, then the
 project's own `AGENTS.md`. When you learn something durable, write it back to
 `~/openclaw-knowledge/` — not just session memory.
+
+## Autonomy guardrails (D-066)
+
+The more accounts you can act on, the more discipline you owe. Before EVERY
+autonomous action taken in Kllosha's name (send email, publish a post, change
+DNS, any external write):
+
+1. **KILL SWITCH — check first.** Run `python3 ~/scripts/halim_guard.py status`.
+   If `halted` is true (exit 1), DO NOT act — just tell Kllosha it's halted.
+   Engage/disengage with `halim_guard.py halt "reason"` / `resume`.
+2. **AUDIT — log after.** Record it:
+   `python3 ~/scripts/halim_guard.py audit --account <acct> --action "<what>" --detail "<...>" --result ok`.
+   Review with `audit-show`. Nothing happens invisibly.
+3. **PO/JO for personal & financial.** Anything personal (bank, private mail) or
+   financial is ALWAYS draft + PO/JO — never autonomous. Real-money accounts
+   (Binance) and government (eKosova) are observe/assist only; every transaction
+   or official filing goes through Kllosha. (See `GMAIL-OPS.md`,
+   `SOCIAL-BROWSER-OPS.md`.)
+4. **Credentials stay on the machine.** Never put a credential or OTP in an
+   email/message/log/commit or send it off the machine.
+5. **Secret rotation.** Periodically refresh `secrets/firefox-logins.csv`
+   (`cd ~/.openclaw/workspace/secrets && python3 firefox_export.py > firefox-logins.csv && chmod 600 firefox-logins.csv`)
+   and rotate API keys if any leak is suspected.
+
+Automation lane order (D-066): official API > Firefox profile with cookies >
+login automation from scratch. Prefer API; browser is the fragile last resort
+(`SOCIAL-BROWSER-OPS.md`).
 
 **Hard rules for this machine:**
 

@@ -24,9 +24,21 @@ lexoje). Tani e menaxhon plotësisht me `ops_mailbox.py`.
 | Arkivo (hiq nga Inbox) | `... scripts/ops_mailbox.py archive <uid> [<uid> ...]` |
 | Vendos etiketë Gmail | `... scripts/ops_mailbox.py label <uid> "Emri i Etiketës"` |
 | Dërgo përgjigje | `echo "TRUPI" \| ... scripts/ops_send_reply.py --to X --subject "Re: ..." [--in-reply-to "<id>"]` |
+| Dërgo me bashkëngjitje | `echo "TRUPI" \| ... scripts/ops_send_reply.py --to X --subject "..." --attach /rruga/dok.pdf` (`--attach` përsëritet) |
 
 Leximi është gjithmonë me BODY.PEEK — nuk e ndryshon flag-un. Shënimi/arkivimi
 e vendos `\Seen`.
+
+### RREGULL I FORTË — vetëm `ops_send_reply.py` dërgon email (D-069)
+
+**KURRË mos dërgo email me `sendmail`, `s-nail`, `mailx`, `msmtp` a çfarëdo
+vegle tjetër direkt.** Çdo dërgim i tillë anashkalon ledger-in
+`data/ops/replies_log.csv` dhe Kllosha humb gjurmën e asaj që ke dërguar në
+emrin e tij (incidenti 2026-08-05 ~11:10: PDF-ja e Septeo-s u dërgua me
+sendmail lokal dhe s'u regjistrua askund). `ops_send_reply.py` mbështet edhe
+bashkëngjitjet me `--attach` — s'ka ASNJË arsye teknike për ta anashkaluar.
+Fushatat outreach (`oak_outreach_campaign.py`, `de_outreach_campaign.py`) janë
+i vetmi përjashtim: kanë ledger-ët e vet + auditin e halim_guard.
 
 ## MURI I ZJARRIT — alias-et e lëndëve (kritik, mos e shkel kurrë)
 
@@ -74,8 +86,23 @@ Kur je i pasigurt nëse një email është "AvokatIM" apo "personal", trajtoje s
 
 - Pas trajtimit të çdo emaili → `mark-read` (dhe `archive` kur s'duhet më në
   Inbox). Synimi: Inbox-i i Kllosha-s të mos mbushet me qindra të palexuar.
-- Në raportin e mëngjesit shto një rresht "Higjiena e inbox-it": sa email të
-  palexuar gjithsej, cili është më i vjetri, dhe sa i trajtove dje.
-- Nisje: sot ka ~106 të palexuar (kryesisht reklama/njoftime + disa DSN
-  bounce). Mos i prek me shumicë pa pyetur — kalo nëpër to gradualisht dhe
-  raporto çka gjen (p.sh. email nga banka që mund të kërkojë vëmendje).
+- **Në raportin e mëngjesit shto GJITHMONË rreshtin "Higjiena e inbox-it".**
+  Merre gati me:
+  ```
+  cd ~/AvokatIM/backend && .venv/bin/python scripts/ops_inbox_hygiene.py
+  ```
+  Skripti është READ-ONLY (BODY.PEEK, s'prek asnjë flag), i njeh alias-et
+  `+token@` (i fut te bucket-i `matter` dhe s'i propozon kurrë për pastrim),
+  dhe kthen fushën `report_line` të gatshme (shq.) + `buckets` (financiare/
+  platforma/personale/reklama/tjera/matter) + `oldest_age_days` +
+  `finance_samples` (deri 5 email financiarë me uid). Fute `report_line`
+  drejtpërdrejt në raport.
+- **Rregull veprimi nga higjiena:**
+  - `financiare` ose `personale` > 0 → shqyrto ato me `ops_mailbox.py read <uid>`;
+    financiare/bankë që kërkon veprim → njofto; personale që kërkon përgjigje →
+    protokolli PO/JO. Përdor `finance_samples` për të gjetur uid-et shpejt.
+  - `reklama`/`tjera` = zhurmë → `mark-read`/`archive` sipas gjykimit, pa pyetur.
+  - Mos prek kurrë bucket-in `matter` (e merr `email_ingest`).
+- Nisje historike: më 2026-08-05 ishin ~107 të palexuar (kryesisht reklama/
+  njoftime); u lexuan pa dashje gjatë një testi IMAP (shih memory 2026-08-05).
+  Që atëherë inbox-i mbahet i pastër me këtë rutinë.

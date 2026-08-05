@@ -95,6 +95,14 @@ sudo -n fail2ban-client status sshd 2>/dev/null | head -5
 ```
 Duhet jail `sshd` aktiv. Nëse mungon ose ka Currently banned > 0 → lajmëro.
 
+## 6d. Siguria — dnf5-automatic (1x në ditë, mëngjes)
+```
+systemctl is-enabled dnf5-automatic.timer && systemctl is-active dnf5-automatic.timer
+journalctl -u dnf5-automatic.service --since "-24h" --no-pager | grep -E "Finished|Deactivated" | tail -1
+```
+⚠️ KONTROLLO `.timer`-in, JO `.service`-in. `.service`-i është `static` (normale) — aktivizohet nga timer-i.
+Timer-i duhet enabled+active. Nëse jo → lajmëro.
+
 ## Rregulla
 - Natën (23:00–08:00) raporto vetëm urgjencat (shërbim i rënë, disk plot).
 - Asnjë veprim korrigjues pa leje — vetëm diagnostiko dhe raporto.
