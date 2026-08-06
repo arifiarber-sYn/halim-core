@@ -1,25 +1,60 @@
 {
-  "last_check": "2026-08-06T03:58:25Z",
+  "last_check": "2026-08-06T09:58:31+00:00",
   "human_emails": 0,
   "bounce_count": 0,
   "errors": 0,
-  "last_triage_check": "2026-08-06T03:58:25+00:00",
+  "last_triage_check": "2026-08-06T09:58:31+00:00",
   "human_count": 0,
   "error": null,
   "last_triage": {
-    "checked_at": "2026-08-06T03:58:25+00:00",
-    "human_count": 0,
-    "bounce_count": 0,
-    "action": "silent_empty"
+    "checked_at": "2026-08-06T09:58:31+00:00",
+    "human": 0,
+    "company": 0,
+    "system": 0,
+    "bounce": 0,
+    "optout": 0,
+    "action": "silence"
   },
   "last_action": {
-    "at": "2026-08-06T03:58:28Z",
+    "at": "2026-08-06T09:58:31+00:00",
     "type": "triage",
     "recipient": null,
     "person": null,
     "action": "none",
-    "outcome": "empty_inbox",
+    "outcome": "empty",
     "notified_kllosha": false,
-    "note": "Triage 05:58: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale sipas D-069."
-  }
+    "note": "Triage 11:58: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
+  },
+  "runs": [
+    {
+      "ts": "2026-08-06T08:48:28Z",
+      "outcome": "empty",
+      "human": 0,
+      "company": 0,
+      "bounce": 0,
+      "optout": 0,
+      "notified_kllosha": false,
+      "note": "Triage 10:48: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
+    },
+    {
+      "ts": "2026-08-06T09:38:24Z",
+      "outcome": "empty",
+      "human": 0,
+      "company": 0,
+      "bounce": 0,
+      "optout": 0,
+      "notified_kllosha": false,
+      "note": "Triage 11:38: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
+    },
+    {
+      "ts": "2026-08-06T09:58:31Z",
+      "outcome": "empty",
+      "human": 0,
+      "company": 0,
+      "bounce": 0,
+      "optout": 0,
+      "notified_kllosha": false,
+      "note": "Triage 11:58: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
+    }
+  ]
 }
