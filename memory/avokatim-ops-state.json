@@ -1,19 +1,12 @@
 {
-  "last_check": "2026-08-06T13:59:25.762851+00:00",
-  "human_emails": 1,
+  "last_check": "2026-08-06T21:18:35.700737+00:00",
+  "human_emails": 0,
   "bounce_count": 0,
   "errors": 0,
-  "last_triage_check": "2026-08-06T13:59:25.762851+00:00",
-  "human_count": 1,
+  "last_triage_check": "2026-08-06T21:18:35.700737+00:00",
+  "human_count": 0,
   "error": null,
-  "last_triage": {
-    "at": "2026-08-06T15:28:31.148822+00:00",
-    "human": 0,
-    "company": 0,
-    "bounce_count": 0,
-    "optout_count": 0,
-    "note": "empty inbox — silence"
-  },
+  "last_triage": "2026-08-06T21:18:27+00:00",
   "last_action": {
     "at": "2026-08-06T13:59:25.762851+00:00",
     "type": "triage",
@@ -25,6 +18,46 @@
     "note": "DeepSeek API billing notice archived; no reply needed."
   },
   "runs": [
+    {
+      "ts": "2026-08-06T21:18Z",
+      "outcome": "empty",
+      "human": 0,
+      "company": 0,
+      "bounce": 0,
+      "optout": 0,
+      "notified_kllosha": false,
+      "note": "Triage 23:18: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
+    },
+    {
+      "ts": "2026-08-06T20:08Z",
+      "outcome": "empty",
+      "human": 0,
+      "company": 0,
+      "bounce": 0,
+      "optout": 0,
+      "notified_kllosha": false,
+      "note": "Triage 22:08: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
+    },
+    {
+      "ts": "2026-08-06T17:48Z",
+      "outcome": "empty",
+      "human": 0,
+      "company": 0,
+      "bounce": 0,
+      "optout": 0,
+      "notified_kllosha": false,
+      "note": "Triage 19:48: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
+    },
+    {
+      "ts": "2026-08-06T17:18:34Z",
+      "outcome": "empty",
+      "human": 0,
+      "company": 0,
+      "bounce": 0,
+      "optout": 0,
+      "notified_kllosha": false,
+      "note": "Triage 19:18: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
+    },
     {
       "ts": "2026-08-06T11:28:25Z",
       "outcome": "empty",
