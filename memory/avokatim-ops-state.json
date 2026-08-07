@@ -1,12 +1,12 @@
 {
-  "last_check": "2026-08-07T09:58:31.024380+00:00",
+  "last_check": "2026-08-07T15:48Z",
   "human_emails": 0,
   "bounce_count": 0,
   "errors": 0,
-  "last_triage_check": "2026-08-07T09:58:31.024380+00:00",
+  "last_triage_check": "2026-08-07T15:48Z",
   "human_count": 0,
   "error": null,
-  "last_triage": "2026-08-07T09:18:41+00:00",
+  "last_triage": "2026-08-07T15:48:24+00:00",
   "last_action": {
     "at": "2026-08-06T13:59:25.762851+00:00",
     "type": "triage",
@@ -18,6 +18,46 @@
     "note": "DeepSeek API billing notice archived; no reply needed."
   },
   "runs": [
+    {
+      "ts": "2026-08-07T15:48Z",
+      "outcome": "empty",
+      "human": 0,
+      "company": 0,
+      "bounce": 0,
+      "optout": 0,
+      "notified_kllosha": false,
+      "note": "Triage 17:48: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
+    },
+    {
+      "ts": "2026-08-07T13:48Z",
+      "outcome": "empty",
+      "human": 0,
+      "company": 0,
+      "bounce": 0,
+      "optout": 0,
+      "notified_kllosha": false,
+      "note": "Triage 15:48: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
+    },
+    {
+      "ts": "2026-08-07T12:10Z",
+      "outcome": "empty",
+      "human": 0,
+      "company": 0,
+      "bounce": 0,
+      "optout": 0,
+      "notified_kllosha": false,
+      "note": "Triage 14:10: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
+    },
+    {
+      "ts": "2026-08-07T10:18Z",
+      "outcome": "no_action",
+      "human": 1,
+      "company": 0,
+      "bounce": 0,
+      "optout": 0,
+      "notified_kllosha": false,
+      "note": "Triage 12:18: 1 email 'human' = raport automatik DMARC nga Google (mail.avokatiim.ai), jo korrespondencë njerëzore — asnjë përgjigje. Mark-read + archive (uid 16494). 0 bounce, 0 optout, 0 error. Heshtje totale."
+    },
     {
       "ts": "2026-08-07T09:58Z",
       "outcome": "empty",
@@ -77,76 +117,6 @@
       "optout": 0,
       "notified_kllosha": false,
       "note": "Triage 23:18: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
-    },
-    {
-      "ts": "2026-08-06T20:08Z",
-      "outcome": "empty",
-      "human": 0,
-      "company": 0,
-      "bounce": 0,
-      "optout": 0,
-      "notified_kllosha": false,
-      "note": "Triage 22:08: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
-    },
-    {
-      "ts": "2026-08-06T17:48Z",
-      "outcome": "empty",
-      "human": 0,
-      "company": 0,
-      "bounce": 0,
-      "optout": 0,
-      "notified_kllosha": false,
-      "note": "Triage 19:48: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
-    },
-    {
-      "ts": "2026-08-06T17:18:34Z",
-      "outcome": "empty",
-      "human": 0,
-      "company": 0,
-      "bounce": 0,
-      "optout": 0,
-      "notified_kllosha": false,
-      "note": "Triage 19:18: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
-    },
-    {
-      "ts": "2026-08-06T11:28:25Z",
-      "outcome": "empty",
-      "human": 0,
-      "company": 0,
-      "bounce": 0,
-      "optout": 0,
-      "notified_kllosha": false,
-      "note": "Triage 13:28: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
-    },
-    {
-      "ts": "2026-08-06T10:18:31Z",
-      "outcome": "no_action",
-      "human": 1,
-      "company": 0,
-      "bounce": 1,
-      "optout": 0,
-      "notified_kllosha": false,
-      "note": "Triage 12:18: 1 email 'human' = raport automatik DMARC nga Google (mail.avokatiim.ai), jo korrespondencë njerëzore — asnjë përgjigje. 1 bounce (pa spike), 0 optout, 0 error. Heshtje totale."
-    },
-    {
-      "ts": "2026-08-06T12:48:24Z",
-      "outcome": "empty",
-      "human": 0,
-      "company": 0,
-      "bounce": 0,
-      "optout": 0,
-      "notified_kllosha": false,
-      "note": "Triage 14:48: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
-    },
-    {
-      "ts": "2026-08-06T13:58Z",
-      "outcome": "no_action",
-      "human": 1,
-      "company": 0,
-      "bounce": 0,
-      "optout": 0,
-      "notified_kllosha": true,
-      "note": "Triage 15:58: 1 email 'human' = njoftim shërbimi nga DeepSeek (rritje çmimesh API), jo korrespondencë AvokatIM — asnjë përgjigje. Mark-read + archive. 0 bounce, 0 optout, 0 error."
     }
   ],
   "last_triage_result": {
@@ -154,5 +124,9 @@
     "human": 0,
     "bounce_count": 0,
     "optout_count": 0
+  },
+  "last_run": {
+    "ts": "2026-08-07T14:11:06.928499+00:00",
+    "action": "none-silent"
   }
 }
