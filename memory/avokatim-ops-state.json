@@ -1,12 +1,12 @@
 {
-  "last_check": "2026-08-07T15:48Z",
+  "last_check": "2026-08-07T22:08:57Z",
   "human_emails": 0,
   "bounce_count": 0,
   "errors": 0,
-  "last_triage_check": "2026-08-07T15:48Z",
+  "last_triage_check": "2026-08-07T22:08:57Z",
   "human_count": 0,
   "error": null,
-  "last_triage": "2026-08-07T15:48:24+00:00",
+  "last_triage": "2026-08-07T22:08:57.962761+00:00",
   "last_action": {
     "at": "2026-08-06T13:59:25.762851+00:00",
     "type": "triage",
@@ -18,6 +18,36 @@
     "note": "DeepSeek API billing notice archived; no reply needed."
   },
   "runs": [
+    {
+      "ts": "2026-08-07T22:08:57Z",
+      "outcome": "empty",
+      "human": 0,
+      "company": 0,
+      "bounce": 0,
+      "optout": 0,
+      "notified_kllosha": false,
+      "note": "Triage 00:08: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
+    },
+    {
+      "ts": "2026-08-07T19:18:51Z",
+      "outcome": "noise_only",
+      "human": 1,
+      "company": 0,
+      "bounce": 0,
+      "optout": 0,
+      "notified_kllosha": false,
+      "note": "1 email 'human' = digest Reddit (noreply@redditmail.com), jo AvokatIM; mark-read + archive. Pa bounce, pa company, pa error. Heshtje."
+    },
+    {
+      "ts": "2026-08-07T16:28Z",
+      "outcome": "empty",
+      "human": 0,
+      "company": 0,
+      "bounce": 0,
+      "optout": 0,
+      "notified_kllosha": false,
+      "note": "Triage 18:26: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
+    },
     {
       "ts": "2026-08-07T15:48Z",
       "outcome": "empty",
@@ -117,6 +147,16 @@
       "optout": 0,
       "notified_kllosha": false,
       "note": "Triage 23:18: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
+    },
+    {
+      "ts": "2026-08-07T18:08Z",
+      "outcome": "empty",
+      "human": 0,
+      "company": 0,
+      "bounce": 0,
+      "optout": 0,
+      "notified_kllosha": false,
+      "note": "Triage 20:08: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
     }
   ],
   "last_triage_result": {
@@ -126,7 +166,7 @@
     "optout_count": 0
   },
   "last_run": {
-    "ts": "2026-08-07T14:11:06.928499+00:00",
+    "ts": "2026-08-07T22:08:57.962761+00:00",
     "action": "none-silent"
   }
 }
