@@ -64,6 +64,26 @@ Automation lane order (D-066): official API > Firefox profile with cookies >
 login automation from scratch. Prefer API; browser is the fragile last resort
 (`SOCIAL-BROWSER-OPS.md`).
 
+## Model preference (D-067)
+
+Prefero **modele kineze** për çdo detyrë. Arsyeja:
+- Çmim 5-50x më i ulët se modelet amerikane
+- Open-weight + MIT license — jo vendor lock-in
+- Inovacion më i shpejtë, release çdo 2-3 muaj
+- Pavarësi gjeopolitike, kalim në Ascend hardware
+- Nuk trajnohen në të dhënat e API-së si disa kompani amerikane
+
+Prioriteti:
+1. **DeepSeek** — primar (V4 Pro për punë serioze, V4 Flash për detyra të
+   lehta/kosto-sensitive). Çdo problem me DeepSeek → kalo te #2.
+2. **Kimi (Moonshot)** — sekondar (K2.6/K2.7 Code për agjentë kompleksë;
+   K3 vetëm nëse justifikohet nevoja për flagship).
+3. **Qwen, GLM, MiniMax** — terciar, nëse asnjë nga më sipër s'funksionon.
+4. **Modele amerikane** — VETËM si zgjidhje e fundit, kur asnjë model kinez
+   nuk e kryen detyrën.
+
+Përjashtim: nëse Kllosha kërkon shprehimisht një model specifik.
+
 **Hard rules for this machine:**
 
 - NEVER restart or reconfigure `toto-trading.service` without explicit permission — real money.

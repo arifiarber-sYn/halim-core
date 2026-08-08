@@ -1,12 +1,19 @@
 {
-  "last_check": "2026-08-08T07:28:33Z",
+  "last_check": "2026-08-08T15:48:28Z",
+  "last_triage": "2026-08-08T15:48:28+00:00",
   "human_emails": 0,
-  "bounce_count": 0,
-  "errors": 0,
-  "last_triage_check": "2026-08-08T07:28:33Z",
   "human_count": 0,
+  "bounce_count": 0,
+  "optout_count": 0,
+  "errors": 0,
   "error": null,
-  "last_triage": "2026-08-08T07:28:33.624306+00:00",
+  "last_triage_check": "2026-08-08T15:48:28Z",
+  "last_triage_result": {
+    "company": 0,
+    "human": 0,
+    "bounce_count": 0,
+    "optout_count": 0
+  },
   "last_action": {
     "at": "2026-08-06T13:59:25.762851+00:00",
     "type": "triage",
@@ -17,99 +24,13 @@
     "notified_kllosha": true,
     "note": "DeepSeek API billing notice archived; no reply needed."
   },
+  "last_run": {
+    "ts": "2026-08-08T15:48:28+00:00",
+    "action": "none-silent"
+  },
   "runs": [
     {
-      "ts": "2026-08-08T07:28:33Z",
-      "outcome": "empty",
-      "human": 0,
-      "company": 0,
-      "bounce": 0,
-      "optout": 0,
-      "notified_kllosha": false,
-      "note": "Triage 09:28: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
-    },
-    {
-      "ts": "2026-08-08T06:38:24Z",
-      "outcome": "empty",
-      "human": 0,
-      "company": 0,
-      "bounce": 0,
-      "optout": 0,
-      "notified_kllosha": false,
-      "note": "Triage 08:38: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
-    },
-    {
-      "ts": "2026-08-08T04:48:32Z",
-      "outcome": "empty",
-      "human": 0,
-      "company": 0,
-      "bounce": 0,
-      "optout": 0,
-      "notified_kllosha": false,
-      "note": "Triage 06:48: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
-    },
-    {
-      "ts": "2026-08-08T02:38:24Z",
-      "outcome": "empty",
-      "human": 0,
-      "company": 0,
-      "bounce": 0,
-      "optout": 0,
-      "notified_kllosha": false,
-      "note": "Triage 04:38: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
-    },
-    {
-      "ts": "2026-08-07T23:38:33Z",
-      "outcome": "empty",
-      "human": 0,
-      "company": 0,
-      "bounce": 0,
-      "optout": 0,
-      "notified_kllosha": false,
-      "note": "Triage 01:38: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
-    },
-    {
-      "ts": "2026-08-07T22:48:32Z",
-      "outcome": "empty",
-      "human": 0,
-      "company": 0,
-      "bounce": 0,
-      "optout": 0,
-      "notified_kllosha": false,
-      "note": "Triage 00:48: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
-    },
-    {
-      "ts": "2026-08-07T22:08:57Z",
-      "outcome": "empty",
-      "human": 0,
-      "company": 0,
-      "bounce": 0,
-      "optout": 0,
-      "notified_kllosha": false,
-      "note": "Triage 00:08: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
-    },
-    {
-      "ts": "2026-08-07T19:18:51Z",
-      "outcome": "noise_only",
-      "human": 1,
-      "company": 0,
-      "bounce": 0,
-      "optout": 0,
-      "notified_kllosha": false,
-      "note": "1 email 'human' = digest Reddit (noreply@redditmail.com), jo AvokatIM; mark-read + archive. Pa bounce, pa company, pa error. Heshtje."
-    },
-    {
-      "ts": "2026-08-07T16:28Z",
-      "outcome": "empty",
-      "human": 0,
-      "company": 0,
-      "bounce": 0,
-      "optout": 0,
-      "notified_kllosha": false,
-      "note": "Triage 18:26: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
-    },
-    {
-      "ts": "2026-08-07T15:48Z",
+      "ts": "2026-08-08T15:48:28Z",
       "outcome": "empty",
       "human": 0,
       "company": 0,
@@ -119,7 +40,7 @@
       "note": "Triage 17:48: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
     },
     {
-      "ts": "2026-08-07T13:48Z",
+      "ts": "2026-08-08T13:48:27Z",
       "outcome": "empty",
       "human": 0,
       "company": 0,
@@ -127,106 +48,6 @@
       "optout": 0,
       "notified_kllosha": false,
       "note": "Triage 15:48: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
-    },
-    {
-      "ts": "2026-08-07T12:10Z",
-      "outcome": "empty",
-      "human": 0,
-      "company": 0,
-      "bounce": 0,
-      "optout": 0,
-      "notified_kllosha": false,
-      "note": "Triage 14:10: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
-    },
-    {
-      "ts": "2026-08-07T10:18Z",
-      "outcome": "no_action",
-      "human": 1,
-      "company": 0,
-      "bounce": 0,
-      "optout": 0,
-      "notified_kllosha": false,
-      "note": "Triage 12:18: 1 email 'human' = raport automatik DMARC nga Google (mail.avokatiim.ai), jo korrespondencë njerëzore — asnjë përgjigje. Mark-read + archive (uid 16494). 0 bounce, 0 optout, 0 error. Heshtje totale."
-    },
-    {
-      "ts": "2026-08-07T09:58Z",
-      "outcome": "empty",
-      "human": 0,
-      "company": 0,
-      "bounce": 0,
-      "optout": 0,
-      "notified_kllosha": false,
-      "note": "Triage 11:58: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
-    },
-    {
-      "ts": "2026-08-07T09:18Z",
-      "outcome": "empty",
-      "human": 0,
-      "company": 0,
-      "bounce": 0,
-      "optout": 0,
-      "notified_kllosha": false,
-      "note": "Triage 11:18: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
-    },
-    {
-      "ts": "2026-08-07T08:48Z",
-      "outcome": "empty",
-      "human": 0,
-      "company": 0,
-      "bounce": 0,
-      "optout": 0,
-      "notified_kllosha": false,
-      "note": "Triage 10:48: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
-    },
-    {
-      "ts": "2026-08-07T05:18Z",
-      "outcome": "empty",
-      "human": 0,
-      "company": 0,
-      "bounce": 0,
-      "optout": 0,
-      "notified_kllosha": false,
-      "note": "Triage 07:18: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
-    },
-    {
-      "ts": "2026-08-07T01:49Z",
-      "outcome": "empty",
-      "human": 0,
-      "company": 0,
-      "bounce": 0,
-      "optout": 0,
-      "notified_kllosha": false,
-      "note": "Triage 03:49: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
-    },
-    {
-      "ts": "2026-08-06T21:18Z",
-      "outcome": "empty",
-      "human": 0,
-      "company": 0,
-      "bounce": 0,
-      "optout": 0,
-      "notified_kllosha": false,
-      "note": "Triage 23:18: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
-    },
-    {
-      "ts": "2026-08-07T18:08Z",
-      "outcome": "empty",
-      "human": 0,
-      "company": 0,
-      "bounce": 0,
-      "optout": 0,
-      "notified_kllosha": false,
-      "note": "Triage 20:08: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
     }
-  ],
-  "last_triage_result": {
-    "company": 0,
-    "human": 0,
-    "bounce_count": 0,
-    "optout_count": 0
-  },
-  "last_run": {
-    "ts": "2026-08-08T07:28:33.624306+00:00",
-    "action": "none-silent"
-  }
+  ]
 }
