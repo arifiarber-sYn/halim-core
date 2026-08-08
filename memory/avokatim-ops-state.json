@@ -1,12 +1,12 @@
 {
-  "last_check": "2026-08-08T02:38:24Z",
+  "last_check": "2026-08-08T07:28:33Z",
   "human_emails": 0,
   "bounce_count": 0,
   "errors": 0,
-  "last_triage_check": "2026-08-08T02:38:24Z",
+  "last_triage_check": "2026-08-08T07:28:33Z",
   "human_count": 0,
   "error": null,
-  "last_triage": "2026-08-08T02:38:24.000000+00:00",
+  "last_triage": "2026-08-08T07:28:33.624306+00:00",
   "last_action": {
     "at": "2026-08-06T13:59:25.762851+00:00",
     "type": "triage",
@@ -18,6 +18,36 @@
     "note": "DeepSeek API billing notice archived; no reply needed."
   },
   "runs": [
+    {
+      "ts": "2026-08-08T07:28:33Z",
+      "outcome": "empty",
+      "human": 0,
+      "company": 0,
+      "bounce": 0,
+      "optout": 0,
+      "notified_kllosha": false,
+      "note": "Triage 09:28: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
+    },
+    {
+      "ts": "2026-08-08T06:38:24Z",
+      "outcome": "empty",
+      "human": 0,
+      "company": 0,
+      "bounce": 0,
+      "optout": 0,
+      "notified_kllosha": false,
+      "note": "Triage 08:38: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
+    },
+    {
+      "ts": "2026-08-08T04:48:32Z",
+      "outcome": "empty",
+      "human": 0,
+      "company": 0,
+      "bounce": 0,
+      "optout": 0,
+      "notified_kllosha": false,
+      "note": "Triage 06:48: human bosh, company bosh, 0 bounce, 0 optout, pa error. Heshtje totale."
+    },
     {
       "ts": "2026-08-08T02:38:24Z",
       "outcome": "empty",
@@ -196,7 +226,7 @@
     "optout_count": 0
   },
   "last_run": {
-    "ts": "2026-08-08T02:38:24.000000+00:00",
+    "ts": "2026-08-08T07:28:33.624306+00:00",
     "action": "none-silent"
   }
 }
