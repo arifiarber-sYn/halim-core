@@ -1,15 +1,9 @@
 {
-  "last_triage": "2026-08-09T06:08+02:00",
-  "last_triage_utc": "2026-08-09T04:08:34+00:00",
-  "result": {
-    "company": [],
-    "human": [],
-    "system_count": 0,
-    "bounce_count": 0,
-    "optout_count": 0,
-    "optouts": []
-  },
-  "actions_taken": [],
-  "errors_consecutive": 0,
-  "notes": "Inbox i pastër, asnjë veprim i nevojshëm."
+  "last_triage": "2026-08-09T09:38:27Z",
+  "human_count": 0,
+  "company_count": 0,
+  "bounce_count": 0,
+  "optout_count": 0,
+  "last_action": null,
+  "consecutive_errors": 0
 }
