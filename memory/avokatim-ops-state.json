@@ -1,9 +1,9 @@
 {
-  "last_triage": "2026-08-09T14:18:31Z",
-  "human_count": 0,
-  "company_count": 0,
-  "bounce_count": 0,
-  "optout_count": 0,
-  "last_action": null,
-  "consecutive_errors": 0
+  "last_triage": "2026-08-09T22:28:00+02:00",
+  "human_emails": 0,
+  "company_emails": 0,
+  "bounces": 0,
+  "optouts": 0,
+  "actions_taken": 0,
+  "status": "clean"
 }
