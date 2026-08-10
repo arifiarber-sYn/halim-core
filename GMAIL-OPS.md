@@ -57,30 +57,45 @@ flowchart TD
     q -->|"njoftim i platformës (From = vetë ne)"| sys["Injoro — s'kërkohet veprim"]
     q -->|"alias +token@"| ing["MOS PREK — e merr email_ingest"]
     q -->|"përgjigje outreach XK/DE ose pyetje profesioni/qytetari"| av["AvokatIM: AUTONOM (AVOKATIM-OPS.md)"]
-    q -->|"përgjigje nga kompani target DE"| mna["LEAD M&A: draft + PO/JO"]
+    q -->|"përgjigje nga kompani target DE"| mna["LEAD M&A: AUTONOM + njofto pas"]
     q -->|"STOP / opt-out"| opt["Heshtje — e kap triage"]
-    q -->|"PERSONALE (bankë, TikTok, privat)"| per["DRAFT + PO/JO — kurrë autonom"]
+    q -->|"PERSONALE (bankë, TikTok, privat)"| per["AUTONOM + njofto pas (halim_guard)"]
 ```
 
-### Korsia PERSONALE — gjithmonë PO/JO (E RE, D-064)
+### Korsia PERSONALE — autonom + njoftim-pas (D-070; zëvendëson PO/JO e D-064)
 
-Çdo email që NUK është i AvokatIM dhe kërkon përgjigje (bankë, shërbime si
-TikTok/Binance/GitHub, korrespondencë private e Kllosha-s):
+Vendim i Klloshës (D-070): **autonomi pa limite** mbi jetën e tij digjitale.
+Për çdo email që NUK është i AvokatIM dhe kërkon përgjigje (bankë, shërbime si
+TikTok/Binance/GitHub, korrespondencë private):
 
-1. **KURRË mos përgjigju autonom.** Këto s'janë punë platforme.
-2. Nëse ka nevojë përgjigje, përgatit një **draft** dhe dërgoja Kllosha-s në
-   Telegram me pyetjen e vetme **"PO (dërgo) / JO (lëre)"**.
-3. Firma është **"Arbër"** (ose siç e kërkon konteksti) — JO "AvokatIM" dhe
-   JO "Ava Legal". Këto janë email personale, jo të biznesit.
-4. Në "PO" → dërgo me `ops_send_reply.py` (regjistrohet vetvetiu te
-   `data/ops/replies_log.csv`), pastaj `mark-read`. Në "JO" → lëre; mund ta
-   `mark-read` ose `archive` nëse Kllosha e thotë.
+1. **Vepro vetë** — mos prit PO/JO. Përjashtimet e vetme janë kill-switch-i
+   (`halim_guard.py status` → i ndalur) dhe lista `never` (BoraLaw, kredenciale
+   jashtë makinës, etj.). Kontrollo gjithmonë të parën:
+   ```
+   ~/scripts/halim_guard.py check --domain email_personal --account gmail --action "reply to <kush>"
+   ```
+2. Nëse `allow:true`, dërgo me `ops_send_reply.py` (regjistrohet te
+   `data/ops/replies_log.csv`), pastaj `mark-read`.
+3. **Njofto pas veprimit** (stance = `act_and_notify`):
+   ```
+   ~/scripts/halim_guard.py audit --account gmail --action "u përgjigja email personal" \
+       --detail "to=<kush> subject=<...>" --result ok --notify
+   ```
+   `--notify` i dërgon Kllosha-s një përmbledhje në Telegram — pra e sheh pas,
+   por s'ka nevojë të aprovojë para.
+4. Firma është **"Arbër"** (ose siç e kërkon konteksti) — JO "AvokatIM" dhe
+   JO "Ava Legal". Këto janë email personale.
 5. Shumica e postës personale s'kërkon fare përgjigje (reklama, njoftime).
-   Për to: përmblidhi te raporti i mëngjesit, `mark-read`/`archive` sipas
-   gjykimit — pa e mbytur Kllosha-n me pyetje.
+   Për to: `mark-read`/`archive` sipas gjykimit + përmblidhi te raporti i
+   mëngjesit — pa njoftime individuale.
+6. **Gjykim për të ndjeshmet:** për veprime me pasoja të mëdha e të
+   pakthyeshme (p.sh. konfirmim transaksioni bankar, veprim ligjor real) vepro
+   njësoj por bëj njoftim të plotë e të qartë menjëherë; nëse je vërtet i
+   pasigurt për qëllimin, mund të pyesësh — por parazgjedhja është të veprosh.
+   **Kredenciale/OTP nuk dalin KURRË** nga makina (email/Telegram/log).
 
-Kur je i pasigurt nëse një email është "AvokatIM" apo "personal", trajtoje si
-**personal** (PO/JO) — gabimi i sigurt.
+Leadet M&A DE (kompani target) trajtohen njësoj: autonom + njofto pas, me
+kujdesin e zakonshëm të markës (Ava Legal, kurrë përmend Kosovën/AvokatIM).
 
 ## Higjiena e inbox-it (detyrë ditore)
 

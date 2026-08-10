@@ -23,29 +23,35 @@ cili shpesh ka cookies të vlefshme → anashkalon login-in (dhe 2FA-në) për
 llogari ku sesioni s'ka skaduar. Kjo është rruga e preferuar për veprime UI ku
 s'ka API.
 
-## Çfarë është I KYÇUR pas lejes eksplicite të Kllosha-s
+## Autonomia (D-070) dhe pengesat REALE (feasibility, jo leje)
 
-**Postimi automatik në TikTok dhe X (Twitter) përmes browser-it NUK ndërtohet
-dhe NUK aktivizohet pa një "PO, ndërtoje" të qartë nga Kllosha.** Arsyet:
+Vendim i Klloshës (D-070): autonomi pa limite + njoftim-pas. Pra këtu s'ka më
+"PO/JO për leje". Por disa platforma kanë pengesa **teknike/ToS** që rrezikojnë
+vetë llogarinë e Klloshës — kjo s'është kufi autonomie, është mbrojtje e aseteve
+të tij. Rendi mbetet: **API zyrtare > profili Firefox me cookies > login nga zero.**
 
-- **Kushtet e Shërbimit:** automatizimi i UI-t të TikTok/X me browser i shkel
-  Kushtet e tyre → rrezik pezullimi/mbylljeje të llogarisë.
-- **Antibot:** TikTok tashmë e ka bllokuar login-in me antibot (shih
-  `social-media-state.json`). Automatizimi është i pasigurt dhe i paqëndrueshëm.
-- **X API** kushton (~$100/muaj) — nëse duhet vërtet X, rruga e drejtë është API
-  me pagesë, jo browser.
+### Meta (Facebook/Instagram — NaturalBeauty): GATI pas 1 hapi OAuth
+- Publisher-i i ndërtuar: `~/NaturalBeauty/src/lib/social.ts` (FB feed/photos +
+  IG dy-hapësh), me rrjedhë miratimi te `/admin/social` (APPROVED → cron boton).
+- Mungojnë vetëm: `PAGE_ACCESS_TOKEN`, `FB_PAGE_ID`, `IG_USER_ID`.
+- Këto s'mintohen dot pa **pëlqimin OAuth të Klloshës** (lejet `pages_manage_posts`,
+  `instagram_content_publish`) — user-token-i aktual ka vetëm `email/public_profile`.
+- **Hapi i vetëm i Klloshës:** lidh Faqen FB + IG Business, jep pëlqimin një herë,
+  pastaj Halimi ekzekuton `~/NaturalBeauty/scripts/meta_token_setup.py --write-env`
+  (short-lived → long-lived + zbulon ID-të). Runbook: `~/NaturalBeauty/docs/agent/SOCIAL-SETUP.md`.
+- Pas kësaj: Halimi **boton autonom** përmes rrjedhës së miratimit + njofton pas.
 
-### Kur Kllosha thotë "PO" për një platformë:
-1. Konfirmo cilën platformë dhe pse (vlera > rreziku i pezullimit).
-2. Ndërto veprim gjysmë-autonom me MBIKËQYRJE: Halimi përgatit postimin, e tregon
-   (PO/JO), pastaj e publikon me browser duke përdorur profilin Firefox; OTP-në,
-   nëse kërkohet, e merr me `otp_bridge.py`.
-3. Kurrë vëllim i lartë / veprime të shpejta si bot — imito ritëm njerëzor,
-   një veprim në kërkesë.
-4. Regjistro çdo veprim (shih A5: `~/scripts/action_audit.py`).
+### TikTok / X: preferoj API, browser-posting mbetet rrezik
+- TikTok e ka bllokuar login-in me **antibot** (`social-media-state.json`:
+  `browser_login_blocked_antibot`) — automatizim UI i paqëndrueshëm + shkel ToS
+  → rrezik pezullimi. Mos posto me browser; prit qasje **TikTok Content Posting API**.
+- **X**: automatizim UI shkel ToS; rruga e drejtë është **X API** (~$100/muaj).
+- Pra këto s'i bllokon leja e Klloshës, i bllokon fizibiliteti. Nëse Kllosha
+  siguron qasje API, Halimi i aktivizon menjëherë (autonom + njoftim-pas).
 
-## Preferenca e arkitekturës
-API zyrtare > profili Firefox me cookies > automatizim login-i nga zero.
-Për rrjetet sociale të biznesit (NaturalBeauty) përdor Graph API (Faza A2), JO
-këtë korsi. Kjo korsi është zgjidhja e fundit, vetëm kur s'ka API dhe Kllosha e
-ka miratuar shprehimisht.
+### Kur boton (kudo që është fizibël):
+1. Përgatit postimin; për veprime me ndikim publik bëj një screenshot para/pas.
+2. `halim_guard.py check --domain social --account <fb|ig|tiktok|x> --action "post ..."`.
+3. Boto (API > Firefox cookies); OTP me `otp_bridge.py` nëse kërkohet.
+4. `halim_guard.py audit --account <...> --action "botova ..." --detail "..." --result ok --notify`.
+5. Ritëm njerëzor, jo bot; kredenciale/OTP kurrë jashtë makinës.
