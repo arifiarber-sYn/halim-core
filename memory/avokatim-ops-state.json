@@ -1,5 +1,5 @@
 {
-  "last_triage": "2026-08-10T15:08:28+02:00",
+  "last_triage": "2026-08-10T17:18:29+02:00",
   "last_run_ok": true,
   "company_count": 0,
   "human_count": 0,
@@ -7,5 +7,5 @@
   "optout_count": 0,
   "actions_taken": [],
   "errors": 0,
-  "note": "Triage 15:08 — i pastër, asnjë email për trajtim"
+  "note": "Triage 17:18 — i pastër, zero email që kërkojnë veprim. Asnjë përgjigje, asnjë bounce, asnjë optout."
 }
