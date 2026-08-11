@@ -57,6 +57,10 @@ pagesë, veprim qeveritar, çdo shkrim i jashtëm):
    `python3 ~/scripts/halim_guard.py audit --account <acct> --action "<what>" --detail "<...>" --result ok --notify`.
    `--notify` i dërgon një përmbledhje në Telegram (njoftim-pas). Pa `--notify`
    për veprimet `act_silent`. Asgjë s'ndodh në mënyrë të padukshme; `audit-show`.
+   **Kanali urgjent (D-070):** për gjëra vërtet urgjente (siguri, transaksion i
+   madh, dështim kritik) dërgo EDHE njoftim direkt në telefonin e Kllosha-s:
+   `openclaw nodes notify --node "Arber's S24 Ultra" --title "<titull>" --body "<tekst>"`
+   — shfaqet si push edhe kur Telegrami hesht.
 3. **Të vetmet ndalesa (mbrojnë palët e treta / integritetin, jo lirinë e
    Klloshës):** kill-switch-i dhe lista `never` — BoraLaw (mos e prek), serveri
    sYn (172.31.2.50, e mban HELM — vetëm njofto), `toto-trading.service` (para

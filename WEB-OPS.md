@@ -70,12 +70,26 @@ Para çdo veprimi WRITE në një portal (dërgim formulari, pagesë, veprim zyrt
 
 ## OTP (kur login kërkon kod)
 
+**Rruga 1 — node-u i telefonit (preferohet, s'do USB):** telefoni i Kllosha-s
+("Arber's S24 Ultra") është node me notification-listener granted. Kërko kodin
+te njoftimet e freskëta:
+
+```
+openclaw nodes invoke --node "Arber's S24 Ultra" --command notifications.list
+```
+Filtro njoftimet e sekondave të fundit nga burimi i pritur (bankë/portal) dhe
+nxirr kodin numerik nga titulli/teksti.
+
+**Rruga 2 — adb (fallback kur node-u offline / kodi vjen me SMS që s'duket
+në njoftime):**
+
 ```
 python3 ~/scripts/otp_bridge.py latest --from <burimi> --max-age 300
 ```
-Lexon SMS/njoftime nga pajisja Android (emulator-5554/telefoni) përmes `adb`.
-Përdore VETËM për të plotësuar një login në këtë makinë; **kodin/kredencialet
-KURRË mos i nxjerr** te email/Telegram/log/commit.
+Lexon SMS/njoftime nga pajisja Android (telefoni me USB/emulator) përmes `adb`.
+
+Në të dyja rrugët: përdore kodin VETËM për të plotësuar login-in në këtë makinë;
+**kodin/kredencialet KURRË mos i nxjerr** te email/Telegram/log/commit.
 
 ## Prova & higjienë
 
